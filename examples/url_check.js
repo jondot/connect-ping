@@ -6,7 +6,7 @@ connect.createServer(
   connect.logger(),
   ping({
     ok_text: 'awesome',
-    check_url: 'http://google.com',
+    check_url: 'http://google',
     ok_regex: /bingo/,
     version: "2.0"
   })
