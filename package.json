@@ -3,6 +3,10 @@
 , "version" : "0.0.1"
 , "author" : "Dotan Nahum <jondotan@gmail.com>"
 , "dependencies" : { "request" : ">= 1.0.0" }
+, "devDependencies": {
+    "should": "*",
+    "mocha": "*"
+  }
 , "repository" :
   { "type" : "git"
   , "url" : "http://github.com/jondot/connect-ping"
