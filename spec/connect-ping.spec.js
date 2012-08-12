@@ -40,7 +40,7 @@ describe('Connect', function(){
 
     it('should have sane error defaults', function(done){
       var app = get_app({
-        check: function(){return false;}
+        check: function(cb){ cb(false);}
       });
       request(app)
         .get('/')
@@ -67,7 +67,7 @@ describe('Connect', function(){
 
     it('should check code when available', function(done){
       var app = get_app({
-        check: function(){return false;}
+        check: function(){ cb(false);}
       });
       request(app)
         .get('/')
