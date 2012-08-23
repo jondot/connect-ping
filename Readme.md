@@ -1,3 +1,4 @@
+[![build status](https://secure.travis-ci.org/jondot/connect-ping.png)](http://travis-ci.org/jondot/connect-ping)
 # Connect-Ping
 A Connect middleware that should indicate the health of your service.
 
