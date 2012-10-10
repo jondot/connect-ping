@@ -1,24 +1,30 @@
 # Connect-Ping
 A Connect middleware that should indicate the health of your service.
 
+A load balancer, for example, can use this endpoint to decide whether
+to include the service in its pool (in ELB for example, this is called "health").
 
 ## Usage
+Get `connect-ping` from `npm`:
+  $ npm install connect-ping
+
 Here is a simple example (see `examples`)
 
-    var connect = require('connect')
-    var ping = require('../index.js')
+```coffeescript
+var connect = require('connect')
+var ping = require('connect-ping')
 
 
-    connect.createServer(
-      connect.logger(),
-      ping({
-        ok_text: 'awesome',
-        check_url: 'http://google.com',
-        ok_regex: /bingo/,
-        version: "2.0"
-      })
-    ).listen(4000);
-
+connect.createServer(
+  connect.logger(),
+  ping({
+    ok_text: 'awesome',
+    check_url: 'http://google.com',
+    ok_regex: /bingo/,
+    version: "2.0"
+  })
+).listen(4000);
+```
 
 ## Options
 
