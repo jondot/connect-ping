@@ -1,6 +1,6 @@
 { "name" : "connect-ping"
 , "description" : "Health checking Connect middleware"
-, "version" : "0.0.2"
+, "version" : "0.0.3"
 , "author" : "Dotan Nahum <jondotan@gmail.com>"
 , "dependencies" : { "request" : ">= 1.0.0" }
 , "devDependencies": {
